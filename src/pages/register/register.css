@@ -1,0 +1,95 @@
+.container-register {
+  width: 1220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.header img {
+  width: 200px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffd600;
+  margin-bottom: 10px;
+}
+
+.form {
+  width: 370px;
+}
+
+.area-input-register {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.area-input-register input {
+  border: 2px solid #e1dfd1;
+  border-radius: 8px;
+  padding: 10px;
+  height: 48px;
+  background: transparent;
+  font-size: 16px;
+  color: #cdc1a1;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.content img {
+  width: 650px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login h2 {
+  display: flex;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffd600;
+  margin-bottom: 10px;
+}
+
+.login button {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background: transparent;
+  color: #ffd600;
+}
+
+.login-button {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffd600;
+}
+
+.login .icon-login {
+  margin-right: 10px;
+}
