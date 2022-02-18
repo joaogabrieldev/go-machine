@@ -96,7 +96,7 @@ export default function Post() {
           </button>
         </div>
         <div className="account">
-          <button>Minha conta</button>
+          <button onClick={handleLogout}>Sair</button>
           <FaUserCircle size={42} color="#FFD600" />
         </div>
       </div>
