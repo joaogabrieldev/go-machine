@@ -15,6 +15,11 @@ export default function MyPosts() {
     fetcher
   );
 
+  function handleLogout() {
+    localStorage.removeItem("@auth_user");
+    navigation("/");
+  }
+
   async function handleAlugar(post) {
     try {
       await fetcher(baseUrl + "/posts/alugar/"+post.id, {
@@ -74,7 +79,7 @@ export default function MyPosts() {
           </button>
         </div>
         <div className="account">
-          <button>Minha conta</button>
+          <button onClick={handleLogout}>Sair</button>
           <FaUserCircle size={42} color="#FFD600" />
         </div>
       </div>
