@@ -22,6 +22,11 @@ export default function Post() {
   const [price, setPrice] = useState("");
   const [category, setCategory] = useState(null);
 
+  function handleLogout() {
+    localStorage.removeItem("@auth_user");
+    navigation("/");
+  }
+
   function handleReset() {
     setTitle("");
     setContent("");
@@ -84,7 +89,7 @@ export default function Post() {
               Anunciar
             </Link>
           </button>
-          <button>
+          <button onClick={handleLogout}>
             <Link className="link-menu" to="/my_posts">
               Meus anúncios
             </Link>
