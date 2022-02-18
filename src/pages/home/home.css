@@ -167,9 +167,10 @@
   color: #532668;
 }
 
-.descricao-anuncio {
+p .descricao-anuncio {
   padding: 20px;
   text-align: center;
+  width: 300px;
 }
 
 .footer-anuncio {
