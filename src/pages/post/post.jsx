@@ -1,6 +1,6 @@
 import "./post.css";
 import { FaUserCircle } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import fetcher, { baseUrl } from "../../lib/fetcher";
 import useSWR from "swr";
@@ -11,6 +11,7 @@ export default function Post() {
     fetcher
   );
 
+  const navigation = useNavigate();
   const user = JSON.parse(localStorage.getItem("@auth_user"));
 
   const [title, setTitle] = useState("");
