@@ -90,7 +90,7 @@ export default function Post() {
               Anunciar
             </Link>
           </button>
-          <button onClick={handleLogout}>
+          <button>
             <Link className="link-menu" to="/my_posts">
               Meus anúncios
             </Link>
